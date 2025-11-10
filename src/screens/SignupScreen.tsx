@@ -83,7 +83,7 @@ export default function SignupScreen() {
             <View className="flex-1 px-6 justify-center">
               {/* Hero Section */}
               <View className="items-center mb-8">
-                <View className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl items-center justify-center mb-4">
+                <View className="w-16 h-16 bg-gradient-to-br from-lime-400 to-green-400 rounded-2xl items-center justify-center mb-4">
                   <Text className="text-3xl">🔥</Text>
                 </View>
                 <Text className="text-white text-3xl font-black text-center mb-3">
