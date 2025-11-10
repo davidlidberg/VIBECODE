@@ -94,7 +94,7 @@ export default function InputScreen() {
             <View className="flex-1 px-6">
               {/* Header */}
               <View className="pt-8 pb-4">
-                <Text className="text-5xl font-black text-white text-center tracking-tight">
+                <Text className="text-5xl font-black text-purple-500 text-center tracking-tight">
                   Wpicks
                 </Text>
                 <Text className="text-gray-400 text-center mt-2 text-base">
