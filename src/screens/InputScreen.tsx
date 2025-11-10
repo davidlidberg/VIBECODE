@@ -19,6 +19,8 @@ import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { RootStackParamList } from "../navigation/types";
 import { analyzeBet } from "../utils/analyzeBet";
 import { useAppStore } from "../state/appStore";
+import MaskedView from "@react-native-masked-view/masked-view";
+import { LinearGradient } from "expo-linear-gradient";
 
 type NavigationProp = NativeStackNavigationProp<RootStackParamList, "Input">;
 
@@ -94,9 +96,38 @@ export default function InputScreen() {
             <View className="flex-1 px-6">
               {/* Header */}
               <View className="pt-8 pb-4">
-                <Text className="text-5xl font-black text-blue-500 text-center tracking-tight">
-                  Wpicks
-                </Text>
+                <MaskedView
+                  maskElement={
+                    <Text
+                      style={{
+                        fontSize: 48,
+                        fontWeight: "900",
+                        textAlign: "center",
+                        letterSpacing: -1,
+                      }}
+                    >
+                      Wpicks
+                    </Text>
+                  }
+                >
+                  <LinearGradient
+                    colors={["#ea580c", "#fb923c"]}
+                    start={{ x: 0, y: 0 }}
+                    end={{ x: 1, y: 1 }}
+                  >
+                    <Text
+                      style={{
+                        fontSize: 48,
+                        fontWeight: "900",
+                        textAlign: "center",
+                        letterSpacing: -1,
+                        opacity: 0,
+                      }}
+                    >
+                      Wpicks
+                    </Text>
+                  </LinearGradient>
+                </MaskedView>
                 <Text className="text-gray-400 text-center mt-2 text-base">
                   Drop your bet. Get the verdict.
                 </Text>
